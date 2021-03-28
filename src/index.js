@@ -7,6 +7,8 @@ const port = 8080;
 
 const app = express();
 
+fs.writeFile("/cart.json", "trying", () => console.log("done n"));
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public/images"));
@@ -46,75 +48,109 @@ app.post("/cart", (req, res) => {
     let cart = null,
       products = null;
     readFileData("/cart.json", (data) => {
+      if (!data) {
+        res.status(502);
+        res.end();
+        return;
+      }
       cart = JSON.parse(data);
       readFileData("/products.json", (data) => {
+        if (!data) {
+          res.status(502);
+          res.end();
+          return;
+        }
         products = JSON.parse(data);
         cart.push(products[req.body.id]);
         console.log(cart.length);
         fs.writeFile("/cart.json", JSON.stringify(cart), (err) => {
-          res.status(500);
-          res.end();
+          if (err) {
+            res.status(500);
+            res.end();
+            return;
+          } else {
+            res.status(200);
+            res.end();
+          }
         });
       });
     });
-
-    readFileData("/cart.json", (data) => console.log(JSON.parse(data).length));
-
-    res.status(200);
   } catch (err) {
     console.log(err);
     res.status(500);
+    res.end();
   }
-
-  res.end();
 });
 
 app.put("/cart", (req, res) => {
   try {
     let cart = null;
     readFileData("/cart.json", (data) => {
-      cart = JSON.parse(data);
-      cart[req.body.id].quantity += req.body.val;
-      console.log(cart);
-      fs.writeFile("/cart.json", JSON.stringify(cart), (err) => {
-        res.status(500);
+      if (!data) {
+        res.status(502);
         res.end();
-      });
+        return;
+      }
+      cart = JSON.parse(data);
+      if (
+        cart[req.body.id].quantity + req.body.val < 1 ||
+        cart[req.body.id].quantity + req.body.val > 10
+      ) {
+        console.log("quantity violation");
+        res.status(400);
+        res.send();
+      } else {
+        cart[req.body.id].quantity += req.body.val;
+        fs.writeFile("/cart.json", JSON.stringify(cart), (err) => {
+          if (err) {
+            console.log("write file err while put cart");
+            res.status(500);
+            res.end();
+            return;
+          }
+          res.status(200);
+
+          // readFileData("/cart.json", (data) => console.log(JSON.parse(data)));
+
+          res.end();
+        });
+      }
     });
-
-    readFileData("/cart.json", (data) => console.log(JSON.parse(data).length));
-
-    res.status(200);
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
     res.status(500);
+    res.end();
   }
-
-  res.end();
 });
 
 app.delete("/cart", (req, res) => {
   try {
     let cart = null;
     readFileData("/cart.json", (data) => {
+      if (!data) {
+        res.status(502);
+        res.end();
+        return;
+      }
       cart = JSON.parse(data);
       cart = cart.filter((item, id) => id !== req.body.id);
       console.log(cart);
       fs.writeFile("/cart.json", JSON.stringify(cart), (err) => {
-        res.status(500);
-        res.end();
+        if (err) {
+          res.status(500);
+          res.end();
+          return;
+        } else {
+          res.status(200);
+          res.end();
+        }
       });
     });
-
-    readFileData("/cart.json", (data) => console.log(JSON.parse(data).length));
-
-    res.status(200);
   } catch (err) {
     console.log(err);
     res.status(500);
+    res.end();
   }
-
-  res.end();
 });
 
 app.listen(port, () => {
