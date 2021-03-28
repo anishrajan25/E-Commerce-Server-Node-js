@@ -1,50 +1,50 @@
 [
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "Macbook Pro",
+    "price": 99990.0,
+    "description": "1.4GHz quad-core 8th-generation Intel Core i5 with Turbo Boost up to 3.9GHz or 2.0GHz quad-core 10th-generation Intel Core i5 with Turbo Boost up to 3.8GHz. 13.3-inch (diagonal) LED-backlit Retina display with IPS technology; 2560-by-1600 native resolution at 227 pixels per inch with support for millions of colors, 16:10 aspect ratio",
+    "image": "https://i8u9f.sse.codesandbox.io/laptop.jpg"
   },
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "Logitech Wireless Mouse",
+    "price": 725.0,
+    "description": "The Logitech B170 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design. This wireless mouse offers an excellent 10 meters reliable wireless range along with 1000 dpi. You can easily pair it with your system by just plugging in a tiny wireless receiver into the USB slot. This wireless mouse works on the latest 2.4 GHz wireless technology and offers universal compatibility with Windows, Mac OS and Chrome OS. Battery Type: AA+.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61y7Z7Myh3L._SL1500_.jpg"
   },
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "SanDisk OTG 64GB",
+    "price": 699.0,
+    "description": "The SanDisk Ultra Dual Drive m3.0 makes it easy to transfer content from your phone to your computer. With a micro-USB connector on one end and a USB 3.0 connector on the other, the drive lets you move content easily between your devices-from your AndroidTM smartphone or tablet to your laptop, PC or Mac computer1. The USB 3.0 connector is high-performance and backward-compatible with USB 2.0 ports. The SanDisk Memory Zone app2 for Android (available on Google Play) helps you manage your device's memory.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71bV203ASmL._SL1500_.jpg"
   },
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "OnePlus 8T 5G",
+    "price": 42999.0,
+    "description": "The all new OnePlus 8T 5G - ultra stops at nothing - loaded with snapdragon 865 processor, 5G connectivity, 120hz fluid amoled display, 65W warp charging, rear quad camera setup.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71yD4YoI-qL._SL1500_.jpg"
   },
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "Mi Power Bank 3i 20000mAh",
+    "price": 1499.0,
+    "description": "The all-new Mi power bank 3i 20000mAh is a portable powerhouse that comes with 18W fast charging that ensures that your devices charge quickly and you can be on the move. The Power bank features Triple port output and Dual port input (Micro-USB/Type-C) with two-way fast charging without compromising on the size and quality. Mi Power Bank 3i 20000mAh supports Power Delivery and offers advanced 12 layers of chip protection. It also comes with smart power management which allows you to safely charge low power devices such as Bluetooth headsets, Fitness bands, etc. All you need to do is simply double press the power button to enter 2-hour low power charging mode.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71lVwl3q-kL._SL1500_.jpg"
   },
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "Noise Shots Nuvo Wireless Bluetooth Earbuds",
+    "price": 1999.0,
+    "description": "Shots Nuvo are a great looking, quick charging pair of wireless earphones that have all the advantages of Bluetooth 5.0 like quick auto-pairing, improved wireless range, longer battery life and better audio quality. Its compact and lightweight design makes sure that it is easy to carry while the total playtime of 32 hours with the charging case makes sure that you are never without music. It also comes with IPX4 sweat and water-resistant rating that takes care of your daily hustle without worrying about any water damage. All Noise products including accessories come with a 1-year warranty against manufacturing defects, from the date of purchase.Do note that only the earbuds are sweat and water-resistant or waterproof and the charging case is not. Do not expose the earbuds to extreme high or low temperature as it may damage the earbuds and deform the parts. Do not throw the earbuds into fire to dispose them off and do not try to disassemble the earbuds. Do not drop the earbuds or keep them in pockets with sharp objects. Do not use abrasive cleaning solvents to clean the earbuds; gently wipe them with a damp cloth to clean them, if necessary. And last but certainly not the least, never listen to music on loud volumes for long durations as you may permanently damage your ears.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61gwV0NGA3L._SL1500_.jpg"
   },
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "Sony Bravia 55 inches 4K UHD Smart TV",
+    "price": 57999.0,
+    "description": "Live an enriching viewing experience with brilliant clarity powered by 4K X-Reality Pro and TRILUMINOS™ Display on this TV. Discover the thrilling entertainment with direct YouTube & Netflix button and USB Tethering.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Nw2ifyBzL._SL1500_.jpg"
   },
   {
-    "name": "Classic Hoodie",
-    "price": 5000,
-    "description": "",
-    "image": ""
+    "name": "Sennheiser Over Ear Wireless Headphones",
+    "price": 13990.0,
+    "description": "Crafted from high-quality materials, the robust and stylish HD models offer an exceptional combination of versatility and superior sound. At home while listening to a podcast or on the go with your favorite song, you can count on the new HD series to be your ultimate companion for wireless audio – whatever you listen to.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71Z2pStVDyL._SL1500_.jpg"
   }
 ]
